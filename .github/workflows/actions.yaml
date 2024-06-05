@@ -1,0 +1,11 @@
+name: 'Markdown Lint Action'
+description: 'Check Markdown files and their YAML front matter'
+inputs:
+  directory:
+    type: string
+    description: 'The directory to check'
+    required: true
+    default: '.'
+runs:
+  using: 'node16'
+  main: 'checkFmYaml.mjs'
