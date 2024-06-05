@@ -9,3 +9,7 @@ inputs:
 runs:
   using: 'node16'
   main: 'checkFmYaml.mjs'
+pre:
+  steps:
+    - name: Install dependencies
+      run: npm install
